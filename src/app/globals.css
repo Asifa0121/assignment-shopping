@@ -6,22 +6,475 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+/* Blog.tsx */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.body{
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  overflow: scroll;
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:50px;
+  justify-content: center;
+ 
+}
+
+@media only screen and (min-width :300px){
+.body{
+  flex-wrap: wrap;
+}
+}
+
+.sub-body{
+  height: 380px;
+  width: 300px;
+  background-color:rgb(214, 209, 209);
+  border-radius: 15px;
+  padding: 25px;
+  justify-content: center;
+  height: fit-content;
+}
+
+.sub-body:hover{
+  border: 3px solid  rgb(189, 192, 192);
+  box-shadow: rgba(85, 84, 84, 0.25) 0px 54px 55px;
+animation-delay: 5s;
+  
+  
+}
+
+.image{
+  justify-content: center;
+ 
+}
+.image:hover{
+  border: 3px solid  rgb(189, 192, 192);
+}
+
+h1{
+  font-size: 25px;
+}
+.description{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+  height: fit-content;
+  justify-content: center;
+}
+
+.explore{
+  border-radius: 20px;
+  border: 20px;
+  background-color: black;
+  height: 30px;
+  width: 100px;
+ margin-left: 120px;
+ color: white;
+}
+.explore:hover{
+  background-color: brown;
+  color: beige;
+}
+
+/* Header.tsx */
+
+.header{
+  display: flex;
+ }
+.header-button{
+  display: flex;
+ background-color: brown;
+  width: 100%;
+   justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 8px;
+
+}
+
+.header-list{
+  display: flex;
+  gap: 20px;
+ color: white;
+ justify-content: center;
+ margin-top: 5px;
+ font-size: 20px;
+ 
+}
+.brand-name{
+  font-size: 35px;
+margin-right: 100px;
+}
+
+@media only screen and (max-width:200px){
+  .header-button{
+    display: flex;
+    flex-wrap: wrap;
+   background-color: brown;
+   justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+  
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+@media only screen and (max-width:200px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+   color:white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 5px;
+   
+  }
+
+  .brand-name{
+    font-size: 2px;
+  justify-content: center;
+
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+
+
+@media only screen and (max-width:100px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 10px;
+   
   }
+
+  .brand-name{
+    font-size: 10px;
+  justify-content: center;
+  }
+}
+
+@media only screen and (max-width:300px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 5px;
+   
+  }
+
+  .brand-name{
+    font-size: 5px;
+  margin-right: 0px;
+  }
+}
+
+
+
+@media only screen and (max-width:200px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size:5px;
+   
+  }
+
+  .brand-name{
+    font-size: 5px;
+  margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width:370){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+   color: rgb(199, 241, 10);
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 10px;
+   
+  }
+
+  .brand-name{
+    font-size: 10px;
+  margin-right: 0px;
+  }
+}
+
+
+@media only screen and (max-width:200px){
+  .header-button{
+    display: flex;
+    flex-wrap: wrap;
+   background-color: brown;
+   justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+  
+  }
+}
+
+@media only screen and (max-width:500px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 15px;
+   
+  }
+
+  .brand-name{
+    font-size: 15px;
+  margin-right: 10px;
+  }
+}
+
+
+
+
+@media only screen and (max-width:600px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 18px;
+   
+  }
+
+  .brand-name{
+    font-size: 18px;
+  margin-right: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width:200px){
+  .header-button{
+    display: flex;
+    flex-wrap: wrap;
+   background-color: brown;
+   justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+
+    
+  }
+}
+
+@media only screen and (max-width:600px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 18px;
+   
+  }
+
+  .brand-name{
+    font-size: 22px;
+  margin-right: 10px;
+  }
+}
+
+
+
+@media only screen and (max-width:800px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 28px;
+   
+  }
+
+  .brand-name{
+    font-size: 22px;
+  margin-right: 10px;
+  }
+}
+
+
+@media only screen and (max-width:1000px){
+  .header-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+   color: white;
+   justify-content: center;
+   margin-bottom: 0px;
+   font-size: 18px;
+   
+  }
+
+  .brand-name{
+    font-size: 22px;
+  margin-right: 10px;
+  }
+}
+/* Footer */
+.footer{
+margin-bottom: 0%;
+opacity: 100%;
+}
+.footer-body{
+  display: flex;
+ background-color: brown;
+  width: 100%;
+  justify-content: right;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  gap: 50px;
+  color: white;
+  padding: 2px;
+  margin-right: 15px;
+  }
+  @media only screen and (max-width:200px){
+    .footer-body{
+    flex-wrap: wrap;
+    font-size: 15px;
+    gap: 10px;
+  }
+}
+
+
+  /* Contact Page */
+  .contact{
+    background-color: antiquewhite;
+    padding: 30px;
+    width: 100%;
+    height: 100vh;
+    height: fit-content;
+    overflow: scroll;
+
+  }
+  h3{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(141, 39, 39);
+  }
+
+  h2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(141, 39, 39);
+  }
+
+  p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(141, 39, 39);
+  }
+  ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(141, 39, 39);
+  }
+
+  .stayupdate{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(141, 39, 39);
+  }
+
+
+  /* ABout */
+  .about{
+   height: 100vh;
+   width: 100%;
+   overflow: scroll;
+   display: flex;
+   padding: 70px;
+   
+  }
+
+  .about-body{
+    display: flex;
+  }
+
+  .logo{
+    padding: 40px;
+  }
+h1{
+  color: rgb(141, 39, 39);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.about-list{
+  font-size: 20px;
+}
+
+/* 1st Bage Page */
+
+.sub-container{
+  display: flex;
+  padding: 40px;
+
+}
+.Main_Container{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.buy{
+  border-radius: 20px;
+  border: 20px;
+  background-color: brown;
+  height: 30px;
+  width: 100px;
+ margin-left: 100px;
+ color: antiquewhite;
+ margin-top: 10px;
+ justify-content: center;
+
+
+
+}
+
+
+.buy:hover{
+  color: white;
+  background-color: rgb(252, 6, 6);
+}
+h4{
+  color: rgb(141, 39, 39);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+text-align: center;
 }
